@@ -1,2 +1,3 @@
-Space Invader game is look like below screenshot :
-![Alt text](output.png?raw=true "Optional Title")
+Space Invaders game is look like this 👇 :
+
+![Alt text](output.png?raw=true "Space Invaders")
