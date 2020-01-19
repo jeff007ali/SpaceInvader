@@ -39,7 +39,7 @@ for i in range(numOfEnemies):
     enemyImg.append(pygame.image.load('enemy.png'))
     enemyX.append(random.randint(0, 735))
     enemyY.append(random.randint(50, 150))
-    enemyX_change.append(4)
+    enemyX_change.append(3)
     enemyY_change.append(40)
 
 # Bullet position
@@ -136,16 +136,16 @@ while running:
 
         enemyX[i] += enemyX_change[i]
         if enemyX[i] <= 0:
-            enemyX_change[i] = 4
+            enemyX_change[i] = 3
             enemyY[i] += enemyY_change[i]
         elif enemyX[i] >= 736:
-            enemyX_change[i] = -4
+            enemyX_change[i] = -3
             enemyY[i] += enemyY_change[i]
 
         # Collision
         collision = isCollision(enemyX[i], enemyY[i], bulletX, bulletY)
         if collision:
-            # Play sound when bullet is triggered
+            # Play sound when bullet hit enemy
             explosion_sound = mixer.Sound('explosion.wav')
             explosion_sound.play()
             # Reset bullet position and bullet state
