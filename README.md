@@ -1,3 +1,3 @@
-Space Invaders game is look like this 👇 :
+Space Invaders Game 👇 :
 
-![Alt text](output.png?raw=true "Space Invaders")
+![Alt text](output.gif?raw=true "Space Invaders")
